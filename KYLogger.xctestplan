@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "018C6E60-8CB0-49C4-B3FC-A760832045C8",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:KYLogger.xcodeproj",
+        "identifier" : "7F14FDF02AAC602B003A385A",
+        "name" : "KYLoggerTests"
+      }
+    }
+  ],
+  "version" : 1
+}
