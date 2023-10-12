@@ -13,6 +13,3 @@ Package.resolved
 xcuserdata/
 build
 
-# Xcode Config
-KYLoggerConfig.xcconfig
-

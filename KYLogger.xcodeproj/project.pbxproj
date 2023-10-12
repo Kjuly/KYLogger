@@ -77,7 +77,6 @@
 		7F14FDF62AAC602B003A385A /* KYLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLoggerTests.swift; sourceTree = "<group>"; };
 		7F14FE022AAC609C003A385A /* KYLogType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYLogType.swift; sourceTree = "<group>"; };
 		7F17D2662AC186E600B8CD21 /* KYLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYLog.swift; sourceTree = "<group>"; };
-		7F38F4D72AD694F70028EE54 /* KYLoggerConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = KYLoggerConfig.xcconfig; sourceTree = "<group>"; };
 		7F38F4DC2AD697DA0028EE54 /* KYLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F38F4DE2AD697DA0028EE54 /* KYLoggerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLoggerDemoApp.swift; sourceTree = "<group>"; };
 		7F38F4E02AD697DB0028EE54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				7F7749222ABAD00E0056E3F7 /* KYLogger.xctestplan */,
-				7F38F4D72AD694F70028EE54 /* KYLoggerConfig.xcconfig */,
 				7F14FDE92AAC602B003A385A /* KYLogger */,
 				7F14FDF52AAC602B003A385A /* KYLoggerTests */,
 				7F38F4DD2AD697DA0028EE54 /* KYLoggerDemo */,
@@ -504,7 +502,6 @@
 /* Begin XCBuildConfiguration section */
 		7F14FDF92AAC602B003A385A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F38F4D72AD694F70028EE54 /* KYLoggerConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -570,7 +567,6 @@
 		};
 		7F14FDFA2AAC602B003A385A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F38F4D72AD694F70028EE54 /* KYLoggerConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
