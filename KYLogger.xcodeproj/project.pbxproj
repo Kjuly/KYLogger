@@ -13,6 +13,15 @@
 		7F14FDF82AAC602B003A385A /* KYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F14FDEA2AAC602B003A385A /* KYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F14FE032AAC609C003A385A /* KYLogType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F14FE022AAC609C003A385A /* KYLogType.swift */; };
 		7F17D2672AC186E600B8CD21 /* KYLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17D2662AC186E600B8CD21 /* KYLog.swift */; };
+		7F38F4DF2AD697DA0028EE54 /* KYLoggerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F4DE2AD697DA0028EE54 /* KYLoggerDemoApp.swift */; };
+		7F38F4E12AD697DB0028EE54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F4E02AD697DB0028EE54 /* ContentView.swift */; };
+		7F38F4E32AD697DD0028EE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F38F4E22AD697DD0028EE54 /* Assets.xcassets */; };
+		7F38F4E72AD697DD0028EE54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F38F4E62AD697DD0028EE54 /* Preview Assets.xcassets */; };
+		7F38F4F12AD699C30028EE54 /* DemoAppFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F4EC2AD699C30028EE54 /* DemoAppFileLogger.swift */; };
+		7F38F4F42AD699C30028EE54 /* UserDefaults+DemoAppFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F4EF2AD699C30028EE54 /* UserDefaults+DemoAppFileLogger.swift */; };
+		7F38F4F72AD69C6B0028EE54 /* KYLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F14FDE72AAC602B003A385A /* KYLogger.framework */; };
+		7F38F4F82AD69C6B0028EE54 /* KYLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F14FDE72AAC602B003A385A /* KYLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F38F5022AD7D4F80028EE54 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F5012AD7D4F80028EE54 /* ContentViewModel.swift */; };
 		7F7749112AB9C61D0056E3F7 /* KYFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7749102AB9C61D0056E3F7 /* KYFileLogger.swift */; };
 		7F7749132ABA86E50056E3F7 /* KYFileLoggerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7749122ABA86E50056E3F7 /* KYFileLoggerError.swift */; };
 		7F7749152ABA89010056E3F7 /* KYFileLogger+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7749142ABA89010056E3F7 /* KYFileLogger+Session.swift */; };
@@ -37,7 +46,28 @@
 			remoteGlobalIDString = 7F14FDE62AAC602B003A385A;
 			remoteInfo = KYLogger;
 		};
+		7F38F4F92AD69C6B0028EE54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F14FDDE2AAC602B003A385A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F14FDE62AAC602B003A385A;
+			remoteInfo = KYLogger;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F38F4FB2AD69C6C0028EE54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F38F4F82AD69C6B0028EE54 /* KYLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7F14FDE72AAC602B003A385A /* KYLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +78,15 @@
 		7F14FE022AAC609C003A385A /* KYLogType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYLogType.swift; sourceTree = "<group>"; };
 		7F17D2662AC186E600B8CD21 /* KYLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYLog.swift; sourceTree = "<group>"; };
 		7F38F4D72AD694F70028EE54 /* KYLoggerConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = KYLoggerConfig.xcconfig; sourceTree = "<group>"; };
+		7F38F4DC2AD697DA0028EE54 /* KYLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F38F4DE2AD697DA0028EE54 /* KYLoggerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLoggerDemoApp.swift; sourceTree = "<group>"; };
+		7F38F4E02AD697DB0028EE54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F38F4E22AD697DD0028EE54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F38F4E42AD697DD0028EE54 /* KYLoggerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KYLoggerDemo.entitlements; sourceTree = "<group>"; };
+		7F38F4E62AD697DD0028EE54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F38F4EC2AD699C30028EE54 /* DemoAppFileLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAppFileLogger.swift; sourceTree = "<group>"; };
+		7F38F4EF2AD699C30028EE54 /* UserDefaults+DemoAppFileLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+DemoAppFileLogger.swift"; sourceTree = "<group>"; };
+		7F38F5012AD7D4F80028EE54 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7F7749102AB9C61D0056E3F7 /* KYFileLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYFileLogger.swift; sourceTree = "<group>"; };
 		7F7749122ABA86E50056E3F7 /* KYFileLoggerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYFileLoggerError.swift; sourceTree = "<group>"; };
 		7F7749142ABA89010056E3F7 /* KYFileLogger+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KYFileLogger+Session.swift"; sourceTree = "<group>"; };
@@ -81,6 +120,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7F38F4D92AD697DA0028EE54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F38F4F72AD69C6B0028EE54 /* KYLogger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,7 +138,9 @@
 				7F38F4D72AD694F70028EE54 /* KYLoggerConfig.xcconfig */,
 				7F14FDE92AAC602B003A385A /* KYLogger */,
 				7F14FDF52AAC602B003A385A /* KYLoggerTests */,
+				7F38F4DD2AD697DA0028EE54 /* KYLoggerDemo */,
 				7F14FDE82AAC602B003A385A /* Products */,
+				7F38F4F62AD69C6B0028EE54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +149,7 @@
 			children = (
 				7F14FDE72AAC602B003A385A /* KYLogger.framework */,
 				7F14FDF12AAC602B003A385A /* KYLoggerTests.xctest */,
+				7F38F4DC2AD697DA0028EE54 /* KYLoggerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +181,44 @@
 				7F7749272ABBE9A10056E3F7 /* KYFileLogger */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		7F38F4DD2AD697DA0028EE54 /* KYLoggerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7F38F4DE2AD697DA0028EE54 /* KYLoggerDemoApp.swift */,
+				7F38F4E02AD697DB0028EE54 /* ContentView.swift */,
+				7F38F5012AD7D4F80028EE54 /* ContentViewModel.swift */,
+				7F38F4EB2AD698E60028EE54 /* DemoAppFileLogger */,
+				7F38F4E22AD697DD0028EE54 /* Assets.xcassets */,
+				7F38F4E42AD697DD0028EE54 /* KYLoggerDemo.entitlements */,
+				7F38F4E52AD697DD0028EE54 /* Preview Content */,
+			);
+			path = KYLoggerDemo;
+			sourceTree = "<group>";
+		};
+		7F38F4E52AD697DD0028EE54 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F38F4E62AD697DD0028EE54 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F38F4EB2AD698E60028EE54 /* DemoAppFileLogger */ = {
+			isa = PBXGroup;
+			children = (
+				7F38F4EC2AD699C30028EE54 /* DemoAppFileLogger.swift */,
+				7F38F4EF2AD699C30028EE54 /* UserDefaults+DemoAppFileLogger.swift */,
+			);
+			path = DemoAppFileLogger;
+			sourceTree = "<group>";
+		};
+		7F38F4F62AD69C6B0028EE54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7F7749272ABBE9A10056E3F7 /* KYFileLogger */ = {
@@ -245,6 +333,25 @@
 			productReference = 7F14FDF12AAC602B003A385A /* KYLoggerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7F38F4DB2AD697DA0028EE54 /* KYLoggerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F38F4EA2AD697DD0028EE54 /* Build configuration list for PBXNativeTarget "KYLoggerDemo" */;
+			buildPhases = (
+				7F38F4D82AD697DA0028EE54 /* Sources */,
+				7F38F4D92AD697DA0028EE54 /* Frameworks */,
+				7F38F4DA2AD697DA0028EE54 /* Resources */,
+				7F38F4FB2AD69C6C0028EE54 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F38F4FA2AD69C6B0028EE54 /* PBXTargetDependency */,
+			);
+			name = KYLoggerDemo;
+			productName = KYLoggerDemo;
+			productReference = 7F38F4DC2AD697DA0028EE54 /* KYLoggerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,7 +359,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Kaijie Yu";
 				TargetAttributes = {
@@ -262,6 +369,9 @@
 					};
 					7F14FDF02AAC602B003A385A = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					7F38F4DB2AD697DA0028EE54 = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
@@ -280,6 +390,7 @@
 			targets = (
 				7F14FDE62AAC602B003A385A /* KYLogger */,
 				7F14FDF02AAC602B003A385A /* KYLoggerTests */,
+				7F38F4DB2AD697DA0028EE54 /* KYLoggerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +407,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F38F4DA2AD697DA0028EE54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F38F4E72AD697DD0028EE54 /* Preview Assets.xcassets in Resources */,
+				7F38F4E32AD697DD0028EE54 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +474,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7F38F4D82AD697DA0028EE54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F38F4E12AD697DB0028EE54 /* ContentView.swift in Sources */,
+				7F38F4F12AD699C30028EE54 /* DemoAppFileLogger.swift in Sources */,
+				7F38F4DF2AD697DA0028EE54 /* KYLoggerDemoApp.swift in Sources */,
+				7F38F4F42AD699C30028EE54 /* UserDefaults+DemoAppFileLogger.swift in Sources */,
+				7F38F5022AD7D4F80028EE54 /* ContentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -361,6 +493,11 @@
 			isa = PBXTargetDependency;
 			target = 7F14FDE62AAC602B003A385A /* KYLogger */;
 			targetProxy = 7F14FDF32AAC602B003A385A /* PBXContainerItemProxy */;
+		};
+		7F38F4FA2AD69C6B0028EE54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F14FDE62AAC602B003A385A /* KYLogger */;
+			targetProxy = 7F38F4F92AD69C6B0028EE54 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -594,6 +731,92 @@
 			};
 			name = Release;
 		};
+		7F38F4E82AD697DD0028EE54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KYLoggerDemo/KYLoggerDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KYLoggerDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kjuly.KYLoggerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F38F4E92AD697DD0028EE54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KYLoggerDemo/KYLoggerDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KYLoggerDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kjuly.KYLoggerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -620,6 +843,15 @@
 			buildConfigurations = (
 				7F14FDFF2AAC602B003A385A /* Debug */,
 				7F14FE002AAC602B003A385A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7F38F4EA2AD697DD0028EE54 /* Build configuration list for PBXNativeTarget "KYLoggerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F38F4E82AD697DD0028EE54 /* Debug */,
+				7F38F4E92AD697DD0028EE54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
