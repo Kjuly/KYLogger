@@ -15,6 +15,4 @@ jobs:
     uses: Kjuly/swift-ci/.github/workflows/unit-tests.yml@main
     with:
       use_xcodebuild: true
-    secrets:
-      token: ${{ secrets.GH_ACTION }}
 
