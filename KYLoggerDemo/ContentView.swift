@@ -109,8 +109,10 @@ struct ContentView: View {
   }
 }
 
-// MARK: - Preview
+// MARK: - ContentView Previews
 
-#Preview {
-  ContentView(viewModel: .init())
+struct ContentView_Previews: PreviewProvider {
+  static var previews: some View {
+    ContentView(viewModel: .init())
+  }
 }
