@@ -78,7 +78,9 @@ struct ContentView: View {
         }
       }
     }
+#if os(iOS)
     .listStyle(.insetGrouped)
+#endif
   }
 
   // MARK: - Private

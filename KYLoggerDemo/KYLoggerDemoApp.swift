@@ -26,8 +26,10 @@ struct KYLoggerDemoApp: App {
     WindowGroup {
       NavigationView {
         ContentView(viewModel: .init())
-          .navigationBarTitleDisplayMode(.inline)
           .navigationTitle("KYLogger Demo")
+#if os(iOS)
+          .navigationBarTitleDisplayMode(.inline)
+#endif
       }
     }
   }
