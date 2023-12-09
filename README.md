@@ -4,7 +4,7 @@ A local system logger for Apple platforms.
 
 This lightweight logging lib is serverless. It includes a debug logger and a file logger which will save logs locally on the device. Users can choose to send a log file when a bug is reported.
 
-![macOS][macOS-Badge] ![iOS][iOS-Badge] ![watchOS][watchOS-Badge]
+![macOS][macOS-Badge] ![iOS][iOS-Badge] ![watchOS][watchOS-Badge]  
 [![SPM][SPM-Badge]][SPM-Link] [![CocoaPods][CocoaPods-Badge]][CocoaPods-Link] [![Carthage][Carthage-Badge]][Carthage-Link] 
 
 [macOS-Badge]: https://img.shields.io/badge/macOS-13.0%2B-blue?labelColor=00367A&color=3081D0
