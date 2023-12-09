@@ -9,6 +9,9 @@ Package.resolved
 .swiftpm
 .build
 
+# Carthage
+Carthage
+
 # Xcode
 xcuserdata/
 build
