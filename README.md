@@ -20,3 +20,12 @@ This lightweight logging lib is serverless. It includes a debug logger and a fil
 [Carthage-Badge]: https://img.shields.io/github/v/tag/Kjuly/KYLogger?label=Carthage&labelColor=2F4858&color=A8DF8E
 [Carthage-Link]: https://swiftpackageindex.com/Kjuly/KYLogger
 
+## Installation
+
+See the following subsections for details on the different installation methods.
+
+- [Swift Package Manager](INSTALLATION.md#swift-package-manager)
+- [CocoaPods](INSTALLATION.md#cocoaPods)
+- [Carthage](INSTALLATION.md#carthage)
+- [Submodule](INSTALLATION.md#submodule)
+
