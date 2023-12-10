@@ -29,3 +29,52 @@ See the following subsections for details on the different installation methods.
 - [Carthage](INSTALLATION.md#carthage)
 - [Submodule](INSTALLATION.md#submodule)
 
+## KYLog Usage
+
+```swift
+KYLog(.debug, "A debug message")
+KYLog(.notice, "A notice message")
+KYLog(.success, "A success message")
+KYLog(.warn, "A warn message")
+KYLog(.error, "A error message")
+KYLog(.critical, "A critical message")
+```
+Outputs:
+```
+🟣 DEBUG -[KYLoggerDemoApp.swift init()] L18: A debug message
+🔵 NOTICE -[KYLoggerDemoApp.swift init()] L19: A notice message
+🟢 SUCCESS -[KYLoggerDemoApp.swift init()] L20: A success message
+🟡 WARN -[KYLoggerDemoApp.swift init()] L21: A warn message
+🔴 ERROR -[KYLoggerDemoApp.swift init()] L22: A error message
+❌ CRITICAL -[KYLoggerDemoApp.swift init()] L23: A critical message
+```
+
+## KYFileLogger Usage
+
+You can define a global variable to toggle file logging and wrap the logger with a convenience function. Just like the demo project:
+```swift
+class DemoAppFileLogger {
+  public static var isDataSyncLoggingEnabled: Bool = false
+}
+
+public func DemoAppSyncFileLog(
+  _ type: KYLogType,
+  _ message: String,
+  function: String = #function,
+  file: String = #file,
+  line: Int = #line
+) {
+#if DEBUG
+  KYFileLogger.log(type, message, DemoAppFileLogger.isDataSyncLoggingEnabled, function: function, file: file, line: line)
+#else
+  if DemoAppFileLogger.isDataSyncLoggingEnabled {
+    KYFileLogger.log(type, message, function: function, file: file, line: line)
+  }
+#endif
+}
+
+// This message will be saved to disk only if `DemoAppFileLogger.isDataSyncLoggingEnabled = true`.
+DemoAppSyncFileLog(.notice, "Some sync messages.")
+```
+> [!NOTE]
+> You can check out the demo project [KYLoggerDemo](KYLoggerDemo) for more details.
