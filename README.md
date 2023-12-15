@@ -9,7 +9,7 @@ This lightweight logging lib is serverless. It includes a debug logger and a fil
 ![macOS][macOS-Badge] ![iOS][iOS-Badge] ![watchOS][watchOS-Badge]  
 [![SPM][SPM-Badge]][SPM-Link] [![CocoaPods][CocoaPods-Badge]][CocoaPods-Link] [![Carthage][Carthage-Badge]][Carthage-Link]
 
-[macOS-Badge]: https://img.shields.io/badge/macOS-13.0%2B-blue?labelColor=00367A&color=3081D0
+[macOS-Badge]: https://img.shields.io/badge/macOS-12.0%2B-blue?labelColor=00367A&color=3081D0
 [iOS-Badge]: https://img.shields.io/badge/iOS-15.5%2B-blue?labelColor=00367A&color=3081D0
 [watchOS-Badge]: https://img.shields.io/badge/watchOS-6.0%2B-blue?labelColor=00367A&color=3081D0
 
