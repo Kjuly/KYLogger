@@ -19,6 +19,11 @@ public func KYLog(
   let fileString: NSString = NSString(string: file)
   print("\(type.text) -[\(fileString.lastPathComponent) \(function)] L\(line): \(message)")
 }
+
+public func KYPrint(_ type: KYLogType, _ message: String) {
+  print("\(type.text): \(message)")
+}
 #else
 public func KYLog(_ type: KYLogType, _ message: String) {}
+public func KYPrint(_ type: KYLogType, _ message: String) {}
 #endif // END #if DEBUG
