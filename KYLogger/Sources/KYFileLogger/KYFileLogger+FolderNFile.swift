@@ -69,7 +69,7 @@ extension KYFileLogger {
     KYLog(.debug, "Cleaning all logs at \(rootURL)...")
     try? FileManager.default.removeItem(at: rootURL)
 
-#if !TARGET_OS_WATCH
+#if !os(watchOS)
     // Check and clean zip file if needed.
     rootURL.appendPathExtension("zip")
     try? FileManager.default.removeItem(at: rootURL)
