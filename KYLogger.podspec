@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "KYLogger"
-  spec.version      = "1.4.0"
+  spec.version      = "1.4.1"
   spec.summary      = "A local system logger for Apple platforms."
   spec.description  = <<-DESC
   This lightweight logging lib is serverless. It includes a debug logger and a file logger which will save logs locally on the device. Users can choose to send a log file when a bug is reported.
