@@ -132,9 +132,9 @@ public class DemoAppFileLogger {
     try KYFileLogger.startSessionIfNeeded(config: config)
 
     KYFileLogger.logWithText("""
-- Generic File Logging: \(isGenericLoggingEnabled)
-- Data Sync File Logging: \(isDataSyncLoggingEnabled)\n
-""")
+      - Generic File Logging: \(isGenericLoggingEnabled)
+      - Data Sync File Logging: \(isDataSyncLoggingEnabled)\n
+      """)
   }
 
   public static func endSessionIfNeeded() {

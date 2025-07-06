@@ -72,9 +72,9 @@ final class KYFileLoggerTests: XCTestCase {
     KYFileLogger.log(.error, "Test Error Log 2")
     logDetails = try KYFileLogger.loadLogDetails(url: logFileURL).get()
     XCTAssertEqual(logDetails, """
-🟣 DEBUG -[KYFileLoggerTests.swift testLog()] L67: Test Debug Log 1
-🔴 ERROR -[KYFileLoggerTests.swift testLog()] L72: Test Error Log 2\n
-""")
+      🟣 DEBUG -[KYFileLoggerTests.swift testLog()] L67: Test Debug Log 1
+      🔴 ERROR -[KYFileLoggerTests.swift testLog()] L72: Test Error Log 2\n
+      """)
   }
 
   //
@@ -111,9 +111,9 @@ final class KYFileLoggerTests: XCTestCase {
     KYFileLogger.logWithText("Test Error Log 2")
     logDetails = try KYFileLogger.loadLogDetails(url: logFileURL).get()
     XCTAssertEqual(logDetails, """
-Test Debug Log 1
-Test Error Log 2\n
-""")
+      Test Debug Log 1
+      Test Error Log 2\n
+      """)
   }
 
   // MARK: - Tests for Internal
