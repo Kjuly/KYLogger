@@ -21,7 +21,7 @@ public class KYFileLogger {
 
   public static func log(
     _ type: KYLogType,
-    _ message: @autoclosure @escaping () -> String,
+    _ message: @autoclosure () -> String,
     _ isFileLoggingEnabled: Bool = true,
     function: String = #function,
     file: String = #file,
