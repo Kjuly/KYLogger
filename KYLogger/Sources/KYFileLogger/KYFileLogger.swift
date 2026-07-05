@@ -22,7 +22,7 @@ public class KYFileLogger: NSObject {
 
   public static func log(
     _ type: KYLogType,
-    _ message: String,
+    _ message: @autoclosure @escaping () -> String,
     _ isFileLoggingEnabled: Bool = true,
     function: String = #function,
     file: String = #file,
@@ -30,7 +30,7 @@ public class KYFileLogger: NSObject {
   ) {
 #if DEBUG
     let fileString: NSString = NSString(string: file)
-    let text = "\(type.text) -[\(fileString.lastPathComponent) \(function)] L\(line): \(message)"
+    let text = "\(type.text) -[\(fileString.lastPathComponent) \(function)] L\(line): \(message())"
     print(text)
     if isFileLoggingEnabled {
       p_appendLogText(text + "\n")
@@ -38,32 +38,44 @@ public class KYFileLogger: NSObject {
 #else
     if isFileLoggingEnabled {
       let fileString: NSString = NSString(string: file)
-      let text = "\(type.text) -[\(fileString.lastPathComponent) \(function)] L\(line): \(message)\n"
+      let text = "\(type.text) -[\(fileString.lastPathComponent) \(function)] L\(line): \(message())\n"
       p_appendLogText(text)
     }
 #endif
   }
 
   @objc
-  public static func logWithText(_ text: String, isFileLoggingEnabled: Bool = true) {
+  public static func logWithText(
+    _ text: @autoclosure () -> String,
+    isFileLoggingEnabled: Bool = true
+  ) {
 #if DEBUG
-    print(text)
-#endif
+    let message = text()
+    print(message)
+
     if isFileLoggingEnabled {
-      p_appendLogText(text + "\n")
+      p_appendLogText("\(message)\n")
     }
+#else
+    if isFileLoggingEnabled {
+      p_appendLogText("\(text())\n")
+    }
+#endif
   }
 
   // MARK: - Internal (Log Text)
 
-  static func p_appendLogText(_ text: String, logFileURL: URL? = _logFileURL) {
+  static func p_appendLogText(
+    _ text: @autoclosure () -> String,
+    logFileURL: URL? = _logFileURL
+  ) {
     if _currentSessionIdentifier == nil {
       return
     }
 
     guard
       let logFileURL,
-      let data = text.data(using: .utf8),
+      let data = text().data(using: .utf8),
       let fileHandler = try? FileHandle(forWritingTo: logFileURL)
     else {
       return
