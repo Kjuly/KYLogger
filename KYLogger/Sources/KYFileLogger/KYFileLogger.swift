@@ -65,16 +65,16 @@ public class KYFileLogger {
 
   static func p_appendLogText(
     _ text: @autoclosure () -> String,
-    logFileURL: URL? = _logFileURL
+    logFileURL: URL? = nil
   ) {
     if _currentSessionIdentifier == nil {
       return
     }
 
     guard
-      let logFileURL,
+      let fileURL = logFileURL ?? _logFileURL,
       let data = text().data(using: .utf8),
-      let fileHandler = try? FileHandle(forWritingTo: logFileURL)
+      let fileHandler = try? FileHandle(forWritingTo: fileURL)
     else {
       return
     }
@@ -83,14 +83,14 @@ public class KYFileLogger {
       do {
         try fileHandler.close()
       } catch {
-        KYLog(.error, "Failed to close the file \(logFileURL)")
+        KYLog(.error, "Failed to close the file \(fileURL)")
       }
     }
 
     do {
       try fileHandler.truncate(atOffset: fileHandler.seekToEndOfFile())
     } catch {
-      KYLog(.error, "Failed to seek to the end of the file \(logFileURL)")
+      KYLog(.error, "Failed to seek to the end of the file \(fileURL)")
       return
     }
 
