@@ -8,8 +8,7 @@
 
 import Foundation
 
-@objc
-public class KYFileLogger: NSObject {
+public class KYFileLogger {
 
   static var _currentSessionIdentifier: String?
   static var _logFileURL: URL?
@@ -44,7 +43,6 @@ public class KYFileLogger: NSObject {
 #endif
   }
 
-  @objc
   public static func logWithText(
     _ text: @autoclosure () -> String,
     isFileLoggingEnabled: Bool = true

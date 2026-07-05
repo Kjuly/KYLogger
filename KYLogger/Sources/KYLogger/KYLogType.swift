@@ -8,7 +8,8 @@
 
 import Foundation
 
-@objc public enum KYLogType: Int {
+public enum KYLogType: Int {
+
   case debug = 1
   case notice
   case success
