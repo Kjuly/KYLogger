@@ -10,8 +10,8 @@ import Foundation
 
 public class KYFileLogger {
 
-  static var _currentSessionIdentifier: String?
-  static var _logFileURL: URL?
+  nonisolated(unsafe) static var _currentSessionIdentifier: String?
+  nonisolated(unsafe) static var _logFileURL: URL?
 
   // MARK: - Public (Log)
 
