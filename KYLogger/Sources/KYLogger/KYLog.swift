@@ -24,6 +24,6 @@ public func KYPrint(_ type: KYLogType, _ message: String) {
   print("\(type.text): \(message)")
 }
 #else
-public func KYLog(_ type: KYLogType, _ message: String) {}
-public func KYPrint(_ type: KYLogType, _ message: String) {}
+@inlinable public func KYLog(_ type: KYLogType, _ message: @autoclosure () -> String) {}
+@inlinable public func KYPrint(_ type: KYLogType, _ message: @autoclosure () -> String) {}
 #endif // END #if DEBUG
